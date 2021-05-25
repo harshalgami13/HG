@@ -404,10 +404,10 @@ font-family: 'Caveat', cursive;*/
 }
 
 @media (max-width: 375px){
-    /* .navbars .row div{
+    .navbars .row div{
         display: flex;
         justify-content: center;
-    } */
+    }
     .home .home-content {
         padding-top: 120px;
         line-height: normal;
