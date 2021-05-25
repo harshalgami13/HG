@@ -1,0 +1,486 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&family=Dancing+Script:wght@400;600&family=Caveat:wght@400;600&display=swap');
+/* font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Caveat', cursive;*/
+:root{
+    --main-color: #5e41ff;
+    --black-color: rgb(24, 24, 24);
+    --primary-color: #188e96;
+    --second-color: #d8d8d8;
+    --third-color: #aaaaaa;
+    --white-color: #ffffff;
+}
+footer{
+    animation-name            : pulse      , shrink    ;
+    animation-duration        : 0.5s      , 0.53s     ;
+    animation-iteration-count : 2s  , 2s  ;
+    animation-direction       : alternate , alternate ;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-animation-delay: 1s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px !important;
+    background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+
+
+.navbars{
+    background-color: transparent;
+    position: absolute;
+    max-height: 150px;
+    line-height: 50px;
+    box-shadow: #7c7c7c;
+    width: 100%;
+    z-index: 100;
+}
+header div ul li a{
+    color: var(--black-color);
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+header div ul li a:hover{
+    color: var(--main-color);
+}
+
+header .container .menu-btn{
+    color: var(--black-color);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.home{
+    height: 100%;
+    min-height: 640px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    background: url(./assests/Web\ 1920\ –\ 2.png) no-repeat center fixed;
+}
+.home .personphoto img{
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    max-width: 100%;
+    transform: translate3d(0px, 0px, 0px) 
+    scale3d(1, 1, 1) rotateX(0deg) 
+    rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+}
+.home .home-content{
+    padding-top: 75px;
+    line-height: 70px;
+    padding-left: 10%;
+    font-weight: 700;
+}
+.home .home-content .text-1{
+    color: var(--main-color);
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+.home .home-content .text-2{
+    color: var(--black-color);
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.home .home-content .text-3{
+    color: var(--black-color);
+    font-size: 35px;
+    font-weight: 100;
+}
+.home .home-content ul li{
+    margin: 5px;
+    color: var(--second-color);
+}
+.home .home-content ul li i{
+    width: 40px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 55px;
+    color: var(--black-color);
+    transition: ease-in-out 0.2s;
+}
+.home .home-content ul li i:hover{
+    color: var(--main-color);
+}
+main{
+    margin: 60px 0px;
+}
+main div .about{
+    font-size: 45px;
+    text-align: center;
+    color: var(--black-color);
+    font-family: 'Dancing Script', cursive;
+}
+
+.aboutcontent{
+    margin-top: 50px;
+}
+.aboutcontent img{
+    display: flex;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutcontent .text1{
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.aboutcontent .text2{
+    font-weight: 200;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+main .aboutcontent .bars{
+    margin-bottom: 10px;
+    width: 80%;
+}
+main .aboutcontent .bars .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+main .aboutcontent .bars .info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+main .aboutcontent .bars .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+main .aboutcontent .bars .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--main-color);
+}
+main .aboutcontent .bars .progress1::before{
+    width: 80.8%;;
+}
+
+/* main .aboutcontent .bars .progress2::before{
+    width: 90%;
+}
+main .aboutcontent .bars .progress3::before{
+    width: 80%;
+} */
+main .aboutcontent .bars .progress4::before{
+    width: 67%;
+}
+main .aboutcontent .bars .progress5::before{
+    width: 83%;
+}
+
+
+.skills{
+    padding: 60px 0px;
+    background-color: var(--black-color) ;
+    color: var(--second-color);
+}
+.main2 div .skill{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.skillcontent{
+    margin-top: 50px;
+}
+.skillcontent .text1{
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.skillcontent .text2{
+    font-weight: 100;
+    text-align: justify;
+    font-size: 20px;
+    color: var(--third-color);
+    margin-bottom: 50px;
+}
+.main2 .skillcontent .bars{
+    margin-bottom: 10px;
+    width: 80%;
+}
+.main2 .skillcontent .bars .info{
+    display: flex;
+    margin-bottom: 5px;
+    color: var(--third-color);
+    align-items: center;
+    justify-content: space-between;
+}
+.main2 .skillcontent .bars .info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.main2 .skillcontent .bars .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.main2 .skillcontent .bars .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--main-color);
+}
+.main2 .skillcontent .bars .progress1::before{
+    width: 80.8%;;
+}
+
+.main2 .skillcontent .bars .progress2::before{
+    width: 90%;
+}
+.main2 .skillcontent .bars .progress3::before{
+    width: 80%;
+}
+.main2 .skillcontent .bars .progress4::before{
+    width: 67%;
+}
+.main2 .skillcontent .bars .progress5::before{
+    width: 83%;
+}
+
+
+
+.main3 div .project{
+    font-size: 45px;
+    margin: 60px 0;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main3 div img{
+    box-shadow: 0 0px 32px 0 rgb(0 0 0 / 30%);
+    margin: 50px auto 50px auto;
+    transition: 0.31s ease-in;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+   
+}
+.main3 div img:hover{
+    /* width: 50.5%; */
+    box-shadow: 0 0px 32px 0 #000000;
+}
+
+.main3 .poster a {
+    text-decoration: none;
+}
+.main3 .poster a .imginfo{
+    color: var(--black-color);
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+}
+.main3 .poster a .imginfo:hover{
+    color: var(--main-color);
+}
+
+footer{
+    background-color: var(--black-color);
+}
+footer div .contact{
+    font-size: 45px;
+    /* margin: 60px 0; */
+    text-align: center;
+    color: var(--second-color);
+    font-family: 'Dancing Script', cursive;
+}
+.contacts{
+    padding: 60px 0px;
+}
+footer div .model img{
+    box-shadow: 0 0px 32px 0 rgb(0 0 0 / 30%);
+    margin: 50px auto 50px auto;
+    transition: 0.31s ease-in;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+footer div .contacttitle{
+    font-size: 25px;
+    color: var(--second-color);
+    font-family: 'Open Sans', cursive;
+}
+footer .contacts .row div .inputbox{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+footer .contacts .row div .inputbox input {
+    height: 100%;
+    width: 100%;
+    color: var(--second-color);
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    background-color: transparent;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease; 
+}
+
+footer .contacts .row div textarea{
+    padding-top: 10px;
+    resize: none;
+    height: 100%;
+    width: 100%;
+    color: var(--second-color);
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+footer .contacts .row div .button{
+    height: 47px;
+    width: 170px;
+    margin-top: 15px;
+}
+footer .contacts .row div button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.copyright{
+    background-color: var(--black-color);
+    color: var(--third-color);
+    padding-bottom: 10px;
+}
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Caveat', cursive;*/
+@media (max-width: 1000px) {
+    header div .navitems{
+        display: none;
+    }
+}
+
+@media (max-width: 375px){
+    /* .navbars .row div{
+        display: flex;
+        justify-content: center;
+    } */
+    .home .home-content {
+        padding-top: 120px;
+        line-height: normal;
+    }
+    .home .home-content .text-1{
+        font-size: 15px;
+    }
+    .home .home-content .text-2{
+        font-size: 30px;
+    }
+    .home .home-content .text-3{
+        font-size: 15px;
+    }
+    main div .about {
+        font-size: 30px;
+    }
+    .aboutcontent .text1 {
+        font-size: 20px;
+    }
+    .aboutcontent .text2 {
+        font-size: 15px;
+    }
+    main .aboutcontent .bars {
+        width: 100%;
+    }
+    .main2 div .skill {
+        font-size: 30px;
+    }
+    .skillcontent .text1 {
+        font-size: 20px;
+    }
+    .skillcontent .text2 {
+        font-size: 15px;
+    }
+    .skillcontent {
+        margin-top: 0px;
+    }
+    .main2 .skillcontent .bars {
+        width: 100%;
+    }
+    .main3 div .project {
+        font-size: 30px;
+    }
+    .main3 div img{
+        margin: 30px auto 30px auto;
+    }
+    .main3 .poster a .imginfo {
+        font-size: 20px;
+    }
+    footer div .contact{
+        font-size: 30px;
+    }
+    footer div .contacttitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    footer .contacts .row div .inputbox {
+        margin-bottom: 8px;
+    }
+    footer .contacts .row div .inputbox input{
+        font-size: 15px;
+        height: 80%;
+    }
+    footer .contacts .row div textarea{
+        font-size: 15px;
+    }
+    footer .contacts .row div button {
+        width: 85%;
+        height: 85%;
+        font-size: 15px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+
+}
