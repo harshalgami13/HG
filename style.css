@@ -394,6 +394,15 @@ footer .contacts .row div button{
     color: var(--third-color);
     padding-bottom: 10px;
 }
+.copyright span a{
+    /* text-decoration: underline; */
+    color: var(--white-color);
+}
+.copyright span a:hover{
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Caveat', cursive;*/
