@@ -13,6 +13,9 @@ font-family: 'Caveat', cursive;*/
     --third-color: #aaaaaa;
     --white-color: #ffffff;
 }
+html{
+    scroll-behavior: smooth;
+}
 footer{
     animation-name            : pulse      , shrink    ;
     animation-duration        : 0.5s      , 0.53s     ;
