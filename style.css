@@ -5,6 +5,22 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Caveat', cursive;*/
+
+.move-top{
+    background-color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.move-top i{
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 18px;
+}
 :root{
     --main-color: #5e41ff;
     --black-color: rgb(24, 24, 24);
