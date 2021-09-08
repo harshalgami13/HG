@@ -39,8 +39,7 @@ footer{
     animation-direction       : alternate , alternate ;
 }
 body{
-    -webkit-font-smoothing: antialiased;
-    -moz-animation-delay: 1s;
+    scroll-behavior: smooth;
 }
 *{
     margin: 0;
@@ -421,20 +420,33 @@ footer .contacts .row div button{
     text-decoration: underline;
     color: var(--white-color);
 }
-
+.menubar{
+    display: none;
+}
+.nav-link{
+    text-align: center;
+}
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Caveat', cursive;*/
-@media (max-width: 1000px) {
-    header div .navitems{
+@media (max-width: 767px) {
+    header div .menulist{
         display: none;
+        background-color: wheat;
+    }
+    header div .navitems{
+        display: block;
+    }
+    .menubar{
+        display: initial;
     }
 }
 
 @media (max-width: 375px){
-    .navbars .row div{
+    .navbars .row div .left-side{
         display: flex;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
     }
     .home .home-content {
         padding-top: 120px;
