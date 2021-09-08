@@ -14,6 +14,9 @@ $(document).ready(function () {
 })
 $(document).ready(function () {
     $('.menulinks').click(function () {
-        $('.menulist').hide()
+        var windowSize = $(window).width();
+        if (windowSize <= 767) {
+           $('.menulist').slideToggle()
+        }
     })
 })
